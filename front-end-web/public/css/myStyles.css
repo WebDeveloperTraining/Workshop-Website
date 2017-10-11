@@ -4,6 +4,10 @@
   color: white;
   padding-left: 5px;
 }
+.title-web h3 a{
+  text-decoration: none;
+  color: #fff;
+}
 .title-web h3 span{
   font-size: 15px;
   text-transform: uppercase;
@@ -20,7 +24,7 @@
 }
 
 .nav-side-menu {
-  overflow: auto;
+  /*overflow: auto;*/
   font-family: verdana;
   font-size: 12px;
   font-weight: 200;
@@ -815,4 +819,65 @@ span.round-tab:hover {
    border-radius: 0 15px 15px 0;
    border: 1px solid rgba(221,226,232,.49);
    outline: none;
+}
+h1.tismal-page{
+  margin: 0px;
+  font-size: 24px;
+  padding: 10px 0 10px 5px;
+  background-color: #4CAF50;
+/*  font-weight: bold;*/
+  color: #fff;
+}
+.widget-holder{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+}
+.managecate{
+  padding-left: 20px;
+  font-weight: bold;
+  color: #51D2B7;
+}
+.text-inverse{
+  color: #fff !important;
+}
+.widget-counter {
+    padding-left: 0.71429em;
+}
+.widget-counter h6{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #51D2B7;
+}
+.widget-counter h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 2.85714em;
+}
+.widget-counter small {
+    font-weight: 700;
+    letter-spacing: .05em;
+    display: block;
+    opacity: .5;
+    margin-top: 0.47619em;
+    text-transform: none;
+}
+.widget-counter i {
+    position: absolute;
+    top: 1.57895em;
+    right: 2.10526em;
+    font-size: 1.35714em;
+
+}
+.material-icons{
+  font-size: 60px;
+  margin-top: 10%;
+  color: #26B99A;
+}
+
+.counter{
+  font-weight: bold;
+}
+.modycol{
+  background-color: 
 }
