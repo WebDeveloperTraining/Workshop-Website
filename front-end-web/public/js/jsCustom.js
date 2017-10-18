@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$("#btnmodel").click(function(){
-		$(".modal").css("display","block");
+		$(".cus-modal").css("display","block");
 		var name = $("#f-name").text(); 
 		var sex = $("#f-sex").text(); 
 		var mail = $("#f-mail").text(); 
@@ -10,7 +10,17 @@ $(document).ready(function(){
 		var jobs = $("#f-jobs").text();
 		var languages = $("#f-languages").text();
 		$("#name").val(name);
-		$("#sex").val(sex);
+		if(sex=="Male"){
+			// ('input:radio[name=gender]:nth(0)').attr('checked',true);
+			$('input:radio[name=gender]')[0].checked = true;
+			// $('input:radio[name=gender]')[1].checked = false;
+		}
+		else{
+			// ('input:radio[name=gender]:nth(1)').attr('checked',true);
+			$('input:radio[name=gender]')[1].checked = true;
+			// $('input:radio[name=gender]')[0].checked = false;
+		}
+		// $("#sex").val(sex);
 		$("#mail").val(mail);
 		$("#address").val(province);
 		$("#chuyenmon").val(chuyenmon);
@@ -21,9 +31,10 @@ $(document).ready(function(){
 	});
 	$("#changes").click(function(){
 		var per=0;
-		$(".modal").css("display","none");
+		$(".cus-modal").css("display","none");
 		var name = $("#name").val(); 
-		var sex = $("#sex").val(); 
+		var sex = $('[name="gender"]:radio:checked').val();
+		console.log(sex);
 		var mail = $("#mail").val(); 
 		var province = $("#address").val();
 		var chuyenmon = $("#chuyenmon").val();
@@ -31,9 +42,9 @@ $(document).ready(function(){
 		var jobs = $("#jobs").val();
 		var languages = $("#languages").val();
 	
-		if(name==''||name=='Chưa cập nhật(*)'){
+		if(name==''||name=='None update(*)'){
 			$("#f-name").text("Chưa cập nhật(*)");
-			$("#f-name").css("color","red");
+			$("#f-name").css({"color":"red", "font-size":"85%"});
 			
 		}
 		else{
@@ -42,9 +53,9 @@ $(document).ready(function(){
 			per++;
 		}
 
-		if(sex==''||sex=='Chưa cập nhật(*)'){
-			$("#f-sex").text("Chưa cập nhật(*)");
-			$("#f-sex").css("color","red");
+		if(sex==''||sex=='None update(*)'){
+			$("#f-sex").text("None update(*)");
+			$("#f-sex").css({"color":"red", "font-size":"85%"});
 			
 		}
 		else{$("#f-sex").text(sex);
@@ -52,9 +63,9 @@ $(document).ready(function(){
 			per++;
 		}
 
-		if(mail==''||mail=='Chưa cập nhật(*)'){
-			$("#f-mail").text("Chưa cập nhật(*)");
-			$("#f-mail").css("color","red");
+		if(mail==''||mail=='None update(*)'){
+			$("#f-mail").text("None update(*)");
+			$("#f-mail").css({"color":"red", "font-size":"85%"});
 			
 		}
 		else{
@@ -63,9 +74,9 @@ $(document).ready(function(){
 			per++;
 		}
 
-		if(province==''||province=='Chưa cập nhật(*)'){
-			$("#f-provice").text("Chưa cập nhật(*)");
-			$("#f-provice").css("color","red");
+		if(province==''||province=='None update(*)'){
+			$("#f-provice").text("None update(*)");
+			$("#f-provice").css({"color":"red", "font-size":"85%"});
 			
 		}
 		else{
@@ -74,9 +85,9 @@ $(document).ready(function(){
 			per++;
 		}
 
-		if(chuyenmon==''||chuyenmon=='Chưa cập nhật(*)'){
-			$("#f-chuyenmon").text("Chưa cập nhật(*)");
-			$("#f-chuyenmon").css("color","red");
+		if(chuyenmon==''||chuyenmon=='None update(*)'){
+			$("#f-chuyenmon").text("None update(*)");
+			$("#f-chuyenmon").css({"color":"red", "font-size":"85%"});
 			
 		}
 		else{
@@ -85,9 +96,9 @@ $(document).ready(function(){
 			per++;
 		}
 
-		if(jobs==''||jobs=='Chưa cập nhật(*)'){
-			$("#f-jobs").text("Chưa cập nhật(*)");
-			$("#f-jobs").css("color","red");
+		if(jobs==''||jobs=='None update(*)'){
+			$("#f-jobs").text("None update(*)");
+			$("#f-jobs").css({"color":"red", "font-size":"85%"});
 			
 		}
 		else{
@@ -95,9 +106,9 @@ $(document).ready(function(){
 			$("#f-jobs").css("color","black");
 			per++;
 		}
-		if(languages==''||languages=='Chưa cập nhật(*)'){
-			$("#f-languages").text("Chưa cập nhật(*)");
-			$("#f-languages").css("color","red");
+		if(languages==''||languages=='None update(*)'){
+			$("#f-languages").text("None update(*)");
+			$("#f-languages").css({"color":"red", "font-size":"85%"});
 			
 		}
 		else{
@@ -105,9 +116,9 @@ $(document).ready(function(){
 			$("#f-languages").css("color","black");
 			per++;
 		}
-		if(hocvan==''||hocvan=='Chưa cập nhật(*)'){
-			$("#f-hocvan").text("Chưa cập nhật(*)");
-			$("#f-hocvan").css("color","red");
+		if(hocvan==''||hocvan=='None update(*)'){
+			$("#f-hocvan").text("None update(*)");
+			$("#f-hocvan").css({"color":"red", "font-size":"85%"});
 		
 		}
 		else{
@@ -120,8 +131,8 @@ $(document).ready(function(){
 		$("#probarr .progress-bar").html(s+"%");
 		$("#perprog").text(s+"%");
 	});
-	$(".close").click(function(){
-		$(".modal").css("display","none");
+	$(".cus-close").click(function(){
+		$(".cus-modal").css("display","none");
 	});
 });
 
@@ -192,5 +203,96 @@ $(document).ready(function(){
 	})
 	$("#sub-4").click(function(){
 		$(".active-sub").removeClass();
+	});
+});
+
+$(document).ready(function(){
+	$("#form-post").validate({
+            rules: {
+                namepost: "required",
+                numberchapter: "required",
+                summary: {
+                    required: true,
+                    minlength: 50
+                }
+            },
+            messages: {
+                namepost: "Post name invalid",
+                numberchapter: "Number chapter invalid",
+                summary: {
+                    required: "Summary invalid",
+                    minlength: "Summary invalid"
+                }
+            }
+        });
+});
+//form winrar custom
+$("ul.j-index li:first").addClass("active").show();
+$(document).ready(function(){
+	$("ul.j-index li").click(function(){
+		var a=$("ul.j-index li").index(this);
+		$("#ff-step").removeClass();
+		$("#ff-step").addClass("ff-active-"+a);
+		$("ul.j-index li").removeClass("active");
+		$(this).addClass("active");
+		switch(a){
+			case 0:
+				$("#step1").show();
+				$("#step2").hide();
+				$("#step3").hide();
+				break;
+			case 1:
+				$("#step2").show();
+				$("#step1").hide();
+				$("#step3").hide();
+				break;
+			case 2:
+				$("#step1").hide();
+				$("#step2").hide();
+				$("#step3").show();
+				break;
+			default:
+				break; 
+		}
+	});
+	$("#steptopic").click(function(){
+		$("#ff-step").removeClass();
+		$("#ff-step").addClass("ff-active-1");
+		$("ul.j-index li").removeClass("active");
+		$("ul.j-index li:nth-child(2)").addClass("active");
+
+		$("#step2").show();
+		$("#step1").hide();
+		$("#step3").hide();
+	});
+	$("#stepsubmit").click(function(){
+		$("#ff-step").removeClass();
+		$("#ff-step").addClass("ff-active-2");
+		$("ul.j-index li").removeClass("active");
+		$("ul.j-index li:nth-child(3)").addClass("active");
+
+		$("#step2").hide();
+		$("#step1").hide();
+		$("#step3").show();
+	});
+	$("#prevsubmit").click(function(){
+		$("#ff-step").removeClass();
+		$("#ff-step").addClass("ff-active-2");
+		$("ul.j-index li").removeClass("active");
+		$("ul.j-index li:nth-child(3)").addClass("active");
+
+		$("#step2").show();
+		$("#step1").hide();
+		$("#step3").hide();
+	});
+	$("#prevtopic").click(function(){
+		$("#ff-step").removeClass();
+		$("#ff-step").addClass("ff-active-2");
+		$("ul.j-index li").removeClass("active");
+		$("ul.j-index li:nth-child(3)").addClass("active");
+
+		$("#step2").hide();
+		$("#step1").show();
+		$("#step3").hide();
 	});
 });

@@ -56,7 +56,7 @@
     <div class="nav-side-menu">
       <div class="">
         <div class="title-web">
-          <h3><a href="home.html"><i class="fa fa-mortar-board"></i> <span>Website Hội Thảo</span></a> 
+          <h3><a href="home.html"><i class="fa fa-mortar-board"></i> <span>Workshop Website</span></a> 
           </h3>
         </div>
         <div class="clearfix"></div>
@@ -149,21 +149,20 @@
       <!-- end left navigation -->
       <!-- page content -->
       <div class="x-panel">
-
+        <h1 class="tismal-page">Contest list</h1>
         <div class="row">
           <div class="col-lg-4 co-md-4 col-xs-12">
-            <h1>Danh sách dự thi</h1>
+            
           </div>
-          <div class="col-lg-8 col-md-12 col-xs-12 search-post">
+          <div class="col-lg-8 col-md-12 col-xs-12 search-post" style="padding-bottom: 5px;">
             <button>Go!</button><input type="text" name="search" placeholder="Search for..." class="ipsearch">
-
           </div>
         </div>
         <div class="panel panel-default">
-          <div class="panel-heading" style="padding-top: 5px;">
+          <div class="panel-heading" style="padding:0px;">
             <div class="row">
               <div class="col-lg-6 col-md-6 col-xs-12">
-                <h3>Danh sách chi tiết</h3>
+                <h3>Detailed list</h3>
               </div>
               <div class="col-lg-6 col-md-6 col-xs-12">
                 <small style="padding-top: 40px; float: right;">Date Update: Tusesday, October 3, 2017</small>
@@ -175,66 +174,153 @@
             <table class="table table-bordered custable">
               <thead>
                 <tr>
-                  <th>Số thứ tự</th>
-                  <th>Tên bài dự thi</th>
-                  <th>Chủ đề dự thi</th>
-                  <th>Trạng thái</th>
-                  <th>Message</th>
-                  <th>Modify</th>
+                  <th>Numerical order</th>
+                  <th>Post name</th>
+                  <th>Topic</th>
+                  <th>Status</th>
+                  <th>Action</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr class="cus-colo">
                   <td>1</td>
                   <td>Bài Dự Thi 1</td>
                   <td>Chủ đề 1</td>
-                  <td>Đã gửi bài</td>
+                  <td>Updating</td>
                   <td>
-                    <button type="button" class="btn btn-info">View mesage</button>
+                     <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#message-box">view message</button>
+                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
+                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
                   </td>
-                  <td><button type="button" class="btn btn-info">Submit</button></td>
                 </tr>
                 <tr>
                   <td>2</td>
                   <td>Bài Dự Thi 2</td>
                   <td>Chủ đề 2</td>
-                  <td class="-pass">Qua Vòng 1</td>
+                  <td class="-pass">Pass round 1</td>
                   <td>
-                    <button type="button" class="btn btn-info" id="btnmodel">View mesage</button>
+                    <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#message-box">view message</button>
+                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
+                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
                   </td>
-                  <td><button type="button" class="btn btn-info">Submit</button></td>
                 </tr>
-                <tr>
+                <tr class="cus-colo">
                   <td>3</td>
                   <td>Bài Dự Thi 3</td>
                   <td>Chủ đề 3</td>
-                  <td>Đang cập nhật</td>
+                  <td>Updating</td>
                   <td>
-                    <button type="button" class="btn btn-info">View mesage</button>
-                  </td>
-                  <td>
+                    <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#message-box">view message</button>
                     <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info" onclick="openfileDialog();">Submit</button>
+                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
+
                   </td>
                 </tr>
                 <tr>
                   <td>4</td>
                   <td>Bài Dự Thi 4</td>
                   <td>Chủ đề 4</td>
-                  <td>Đang cập nhật</td>
+                  <td>Updating</td>
                   <td>
-                    <button type="button" class="btn btn-info">View mesage</button>
-                  </td>
-                  <td>
+                     <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#message-box">view message</button>
                     <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info" onclick="openfileDialog();">Submit</button>
+                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
+                  </td>
+                </tr>
+                <tr class="cus-colo">
+                  <td>5</td>
+                  <td>Bài Dự Thi 1</td>
+                  <td>Chủ đề 1</td>
+                  <td>Send</td>
+                  <td>
+                     <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#message-box">view message</button>
+                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
+                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Bài Dự Thi 2</td>
+                  <td>Chủ đề 2</td>
+                  <td class="-pass">Pass round 1</td>
+                  <td>
+                     <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#message-box">view message</button>
+                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
+                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
+                  </td>
+                </tr>
+                <tr class="cus-colo">
+                  <td>7</td>
+                  <td>Bài Dự Thi 3</td>
+                  <td>Chủ đề 3</td>
+                  <td>Updating</td>
+                  <td>
+                    <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#message-box">view message</button>
+                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
+                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Bài Dự Thi 4</td>
+                  <td>Chủ đề 4</td>
+                  <td>Updating</td>
+                  <td>
+                    <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#message-box">view message</button>
+                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
+                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
+                  </td>
+                </tr>
+                <tr class="cus-colo">
+                  <td>9</td>
+                  <td>Bài Dự Thi 3</td>
+                  <td>Chủ đề 3</td>
+                  <td>Updating</td>
+                  <td>
+                    <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#message-box">view message</button>
+                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
+                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Bài Dự Thi 4</td>
+                  <td>Chủ đề 4</td>
+                  <td>Updating</td>
+                  <td>
+                     <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#message-box">view message</button>
+                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
+                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-        </div>
+          <div class="modal fade modal-md" id="message-box" role="dialog">
+            <div class="modal-dialog">
 
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: #20A4FF;">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Message</h4>
+                </div>
+                <div class="modal-body">
+                  <p> <span style="font-family: DauphinPlain; font-size: 16px;">
+                  Hello Cong Trinh Van Where can I get some? </span><br>
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                  <br>
+                  <hr>
+                  <span style="float: right;">Thanks you!</span>
+                  <div class="clearfix"></div>
+                </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
       <!--  end page content -->
       <footer>

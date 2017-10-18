@@ -63,9 +63,9 @@
         <div class="clearfix"></div>
         <div class="img-info hidesmall">
           <div class="pic">
-            <img src="../public/images/1.jpg" class="img-circle" alt="Cinque Terre" width="50" height="50">Wellcome,
+            <img src="../public/images/1.jpg" class="img-circle" alt="Cinque Terre" width="50" height="50"> Wellcome, 
           </div>
-          <div class="info hidesmall">
+          <div class="info">
             <h4> Công Trịnh Văn</h4>
           </div>
         </div>
@@ -151,47 +151,54 @@
       <!-- page content -->
       <div class="x-panel">
         <div class="row">
-          <section>
-            <div class="wizard">
-              <div class="wizard-inner">
-                <div class="connecting-line"></div>
-                <ul class="nav nav-tabs" role="tablist">
-
-                  <li role="presentation" class="active">
-                    <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
-                      <span class="round-tab">
-                        <i class="glyphicon glyphicon-picture"></i>
-                        
-                      </span>
-                    </a>
-                  </li>
-
-                  <li role="presentation" class="disabled">
-                    <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
-                      <span class="round-tab">
-                        <i class="glyphicon glyphicon-pencil"></i>
-                      </span>
-                    </a>
-                  </li>
-                  <li role="presentation" class="disabled">
-                    <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
-                      <span class="round-tab">
-                        <i class="glyphicon glyphicon-folder-open"></i>
-                      </span>
-                    </a>
-                  </li>
-
-                  <li role="presentation" class="disabled">
-                    <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
-                      <span class="round-tab">
-                        <i class="glyphicon glyphicon-ok"></i>
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <form role="form">
+          <div class="step_container" >
+        <h2></h2>
+        <div id="ff-step" class="ff-active-0">
+          <ul class="services-tabs j-index">
+            <li class="active">
+              <a href="#step1">
+                <span class="step-number">
+                  <strong>
+                    <em>1</em>
+                  </strong>
+                </span>
+                <span class="tab-text">
+                  List Topics
+                </span>
+              </a>
+            </li>
+            <li class>
+              <a href="#step2">
+                <span class="step-number">
+                  <strong>
+                    <em>2</em>
+                  </strong>
+                </span>
+                <span class="tab-text">
+                  Post Information
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#step3">
+                <span class="step-number">
+                  <strong>
+                    <em>3</em>
+                  </strong>
+                </span>
+                <span class="tab-text">
+                  Review Post
+                </span>
+              </a>
+            </li>
+          </ul>
+          <div class="progress-filler">
+            <span class="progress-indicator">
+              <span class="progress-active">
+              </span>
+            </span>
+          </div>
+          <form role="form">
                 <div class="tab-content">
                   <div class="tab-pane active" role="tabpanel" id="step1">
                     <h2 style="color: #9ECDDF;">Danh Sách Chủ Đề</h2>
@@ -303,7 +310,7 @@
                       </div>
                     </div>
                     <ul class="list-inline pull-right">
-                      <li><button type="button" class="btn btn-primary next-step">Next Step</button></li>
+                      <li><button type="button" class="btn btn-primary next-step" id="steptopic">Next Step</button></li>
                     </ul>
                   </div>
                   <div class="tab-pane cus-pan" role="tabpanel" id="step2">
@@ -339,11 +346,27 @@
                               <textarea rows="10" name="summary" placeholder="Say something for us" required="true"></textarea>
                             </div>
                           </div>
-                          <div style="float: right;">
+                          <!-- div style="float: right;">
                              <button type="submit" class="btn btn-primary" id="inf-post">Submit</button>
                           </div>
-                          <div class="clearfix"></div>
-                         
+                          <div class="clearfix"></div> -->
+
+                          <div class="row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-md-7">
+                              <div class="panel panel-default cus-bor">
+                                <div class="panel-body addfile">
+                                  <div class="space-fileup">
+                                    <label class="input-label" for="file">
+                                      <i class="fa fa-upload"></i>
+                                      <span class="label-span">Select file to upload</span></label>
+                                    <input type="file" name="" id="file" multiple="true">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-3"></div>
+                          </div>
                         </form>
                       </div>
                       <div class="col-lg-3">
@@ -351,8 +374,8 @@
                       </div>
                     </div>  
                     <ul class="list-inline pull-right">
-                      <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                      <li><button type="submit" class="btn btn-primary next-step" disabled="true">Next Step</button></li> <!-- next-step -->
+                      <li><button type="button" class="btn btn-default prev-step" id="prevtopic">Previous</button></li>
+                      <li><button type="submit" class="btn btn-primary next-step" id="stepsubmit" disabled="true">Next Step</button></li> <!-- next-step -->
                     </ul>
                   </div>
                   <div class="tab-pane" role="tabpanel" id="step3">
@@ -375,42 +398,17 @@
                       </div>
                     </div>
                     <ul class="list-inline pull-right">
-                      <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                      <li><button type="button" class="btn btn-default prev-step" id="prevsubmit">Previous</button></li>
                       <li><button type="button" class="btn btn-default next-step">Skip</button></li>
-                      <li><button type="button" class="btn btn-primary btn-info-full next-step">Next Step</button></li>
-                    </ul>
-                  </div>
-                  <div class="tab-pane" role="tabpanel" id="complete">
-                    <h2 style="color: #9ECDDF;">Hoàn thành thông tin</h2>
-                    <div class="row">
-                      <div class="col-md-8">
-                        <div class="panel panel-default">
-                          <div class="panel-body cus-bor">
-                            <div id="post-information" class="information-post">
-                              <ul>
-                                <li>Chủ đề: <span id="f-chude">IOT</span></li>
-                                <li>Tên bài: <span id="f-namepost">Ứng dụng IOT vào nông nghiệp</span></li>
-                                <li>Số chương: <span style="color: red;" id="f-chapter">10<small></small></span></li>
-                                <li>Tóm tắt: <span id="f-descripble">Why do we use it?
-                                   is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                                </span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <ul class="list-inline pull-right">
-                      <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                      
-                      <li><button type="button" class="btn btn-primary btn-info-full next-step" id="submit-post">Submit</button></li>
+                      <li><button type="button" class="btn btn-primary btn-info-full next-step" >Next Step</button></li>
                     </ul>
                   </div>
                   <div class="clearfix"></div>
                 </div>
               </form>
-            </div>
-          </section>
+        </div>
+      </div>
+      <!-- /Step -->
         </div>
       </div>
       <!--  end page content -->
