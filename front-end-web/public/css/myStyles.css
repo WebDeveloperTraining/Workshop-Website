@@ -791,10 +791,21 @@ a:hover .step-number em{
     top: 32%;
     width: 60%;
     height: 17px;
+    left: 0px;
   }
   .tab-text{
     font-size: 14px;
   }
+  .tab-pane .cus-bor{
+    margin-top: 10px;
+  }
+/*  .resize-pic{
+    width: 85%;
+  }
+  .progress-filler{
+    width: 73%;
+    margin-left: 24px;
+  }*/
 }
 
 /*end winrar 1*/
@@ -970,6 +981,18 @@ span.round-tab:hover {
   padding-top: 10px;
   text-align: right;
 }
+.spacetoge span.valid{
+    padding-left: 5px;
+    color: #88BA00;
+    font-size: 17px;
+    display: none;
+}
+.spacetoge span.invalid{
+    padding-left: 5px;
+    color: #FF0000;
+    font-size: 17px;
+    display: none;
+}
 @media(max-width:768px){
   .spacetoge{
     text-align: left;
@@ -977,13 +1000,13 @@ span.round-tab:hover {
     .spacetoge label{
     }
   .spacetoge input, .spacetoge textarea{
-    width: 100% !important;
+    width: 87% !important;
     border-color: #ddd;
   }
 }
 @media(min-width:768px) and (max-width: 1024px){
   .spacetoge input, .spacetoge textarea{
-    width: 100% !important;
+    width: 88% !important;
     border-color: #ddd;
   }
 }
@@ -1719,4 +1742,91 @@ h5.media-heading{
 }
 tr.cus-colo{
   background-color: #F9F9F9;
+}
+td button.sizebutton span{
+    display: block;
+  }
+@media (max-width: 768px){
+  .cus-modal{
+    width: 100%;
+    
+  }
+  .cus-modal-content{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  td button{
+    font-size: 7px;
+  }
+  td button.sizebutton span{
+    display: none;
+  }
+  .custable tbody tr td{
+    font-size: 7px;
+  }
+  .custable thead tr th{
+    font-size: 8px;
+  }
+
+  h3.detaillistt{
+    margin-bottom: 0px;
+  }
+  small.smalldetaillistt{
+    padding-top: 0px !important;
+
+  }
+  .search-post input{
+    width: 88%;
+  }
+}
+.settingsuser label{
+  font-size: 16px;
+  color: #1ABB9C;
+  margin: 5px 10px 5px 10px;
+}
+.settingsuser input{
+  width: 50%;
+  font-size: 16px;
+}
+.settingsuser span{
+  cursor: pointer;
+  color: red;
+}
+.changessitting{
+  float: right;
+}
+.modifytopic-tab>input, .modifytopic-tab>button{
+  margin-top: 0px;
+}
+.modifytopic-tab>input{
+  width: 65%;
+}
+.alinetexxt{
+  text-align: right;
+  color: #73879C;
+  font-size: 13px;
+}
+.alinetexxt>label{
+  padding: 8px;
+}
+.space-fiels{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.formtopic input, .formtopic textarea{
+  width: 100%;
+  border-radius: 0px;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+@media (max-width: 768px){
+  .alinetexxt{
+    text-align: left;
+    color: #73879C;
+    font-size: 13px;
+  }
+  .alinetexx>label{
+    margin-bottom: 0px !important;
+  }
 }

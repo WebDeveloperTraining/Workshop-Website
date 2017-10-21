@@ -136,40 +136,40 @@ $(document).ready(function(){
 	});
 });
 
-$(document).ready(function () {
+// $(document).ready(function () {
 	
-    $('.nav-tabs > li a[title]').tooltip();
+//     $('.nav-tabs > li a[title]').tooltip();
     
-    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+//     $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
 
-        var $target = $(e.target);
+//         var $target = $(e.target);
     
-        if ($target.parent().hasClass('disabled')) {
-            return false;
-        }
-    });
+//         if ($target.parent().hasClass('disabled')) {
+//             return false;
+//         }
+//     });
 
-    $(".next-step").click(function (e) {
+//     $(".next-step").click(function (e) {
 
-        var $active = $('.wizard .nav-tabs li.active');
-        $active.next().removeClass('disabled');
-        nextTab($active);
+//         var $active = $('.wizard .nav-tabs li.active');
+//         $active.next().removeClass('disabled');
+//         nextTab($active);
 
-    });
-    $(".prev-step").click(function (e) {
+//     });
+//     $(".prev-step").click(function (e) {
 
-        var $active = $('.wizard .nav-tabs li.active');
-        prevTab($active);
+//         var $active = $('.wizard .nav-tabs li.active');
+//         prevTab($active);
 
-    });
-});
+//     });
+// });
 
-function nextTab(elem) {
-    $(elem).next().find('a[data-toggle="tab"]').click();
-}
-function prevTab(elem) {
-    $(elem).prev().find('a[data-toggle="tab"]').click();
-}
+// function nextTab(elem) {
+//     $(elem).next().find('a[data-toggle="tab"]').click();
+// }
+// function prevTab(elem) {
+//     $(elem).prev().find('a[data-toggle="tab"]').click();
+// }
 $(document).ready(function(){
 	$("#file").on("change",function(e){
 		var files=$(this)[0].files;
@@ -206,26 +206,55 @@ $(document).ready(function(){
 	});
 });
 
+
+
 $(document).ready(function(){
-	$("#form-post").validate({
-            rules: {
-                namepost: "required",
-                numberchapter: "required",
-                summary: {
-                    required: true,
-                    minlength: 50
-                }
-            },
-            messages: {
-                namepost: "Post name invalid",
-                numberchapter: "Number chapter invalid",
-                summary: {
-                    required: "Summary invalid",
-                    minlength: "Summary invalid"
-                }
-            }
-        });
+
+	$("#numberchapter").focusout(function(){
+		var s = $("#numberchapter").val();
+		if(s==''){
+			$("#number-chapter span.invalid").css("display","inline-block");
+			$("#number-chapter span.valid").css("display","none");
+		}
+		else{
+			$("#number-chapter span.invalid").css("display","none");
+			$("#number-chapter span.valid").css("display","inline-block");
+
+		}
+	});
+
+	$("#namepost").focusout(function(){
+		var s = $("#namepost").val();
+		if(s==''){
+			$("#name-post span.invalid").css("display","inline-block");
+			$("#name-post span.valid").css("display","none");
+
+		}
+		else{
+			$("#name-post span.invalid").css("display","none");
+			$("#name-post span.valid").css("display","inline-block");
+
+		}
+	});
+
+	$("#summary").focusout(function(){
+		var s = $("#summary").val();
+		if(s==''){
+			$("#-summary span.invalid").css("display","inline-block");
+			$("#-summary span.valid").css("display","none");
+
+		}
+		else{
+			$("#-summary span.invalid").css("display","none");
+			$("#-summary span.valid").css("display","inline-block");
+
+		}
+	});
+
 });
+
+
+
 //form winrar custom
 $("ul.j-index li:first").addClass("active").show();
 $(document).ready(function(){
@@ -296,3 +325,16 @@ $(document).ready(function(){
 		$("#step3").hide();
 	});
 });
+
+$(document).ready(function(){
+	$("#modifypass").click(function(){
+		$("input[name='Password']").prop('disabled', false);
+		$("#confirmpass").show();
+	})
+	$("#modifyemail").click(function(){
+		$("input[name='email']").prop('disabled', false);
+	})
+	$("#modifyphone").click(function(){
+		$("input[name='Phone']").prop('disabled', false);
+	})
+})
