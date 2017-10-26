@@ -338,3 +338,16 @@ $(document).ready(function(){
 		$("input[name='Phone']").prop('disabled', false);
 	})
 })
+
+
+$(document).ready(function(){
+	$("#mananew1, #mananew2, #mananew3").click(function(){
+		window.location.href="managernewsevent.html";
+	})
+	$("#manauser1, #manauser2, #manauser3").click(function(){
+		window.location.href="manageruser.html";
+	})
+	$("#manatopic1, #manatopic2, #manatopic3").click(function(){
+		window.location.href="topicmanagement.html";
+	})
+});
