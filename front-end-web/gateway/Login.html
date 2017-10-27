@@ -1,0 +1,168 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <script src="../private/assets/global/plugins/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../private/assets/global/plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../private/assets/global/plugins/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <script src="../private/assets/global/plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- font awaysome -->
+    <link rel="stylesheet" href="../private/assets/global/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../private/assets/admin/privateCss/privateCss.css">
+    <title>LOGIN PAGE</title>
+</head>
+
+<body>
+    <!-- Begin pre-header -->
+    <div id="pre-header">
+        <div class="container">
+            <div class="row" style="margin-left: -15px;margin-right:-15px;">
+                <div class="col-md-6 ">
+                    <a href="#"><img class="site-logo" src="../private/images/site-logo.JPG" alt="TTHT" width="100%"></a>
+                </div>
+                <!-- End list-info-header -->
+                <!-- Begin login-logout acount -->
+                <div class="col-md-6">
+                    <ul class="list-inline pull-right list-info-header ">
+                        <li><i class="fa fa-phone" aria-hidden="true"><span> (+84) 168 464 8350</span></i></li>
+                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i><span> trungtamhoithao@gmail.com</span></li>
+                    </ul>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End pre-header -->
+
+    <!-- Begin Contents -->
+    <div id="contents">
+        <div class="container">
+            <!-- Begin Breadcumb -->
+            <ul class="breadcrumb">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li class="active">Login</li>
+            </ul>
+            <!-- Begin form-login -->
+            <h3 class="form-title">Sign in</h3>
+            <form class="form-Login" action="" method="post">
+                <div class="input-form">
+                    <input class="textbox-user" name="username" type="text" autocomplete="off" placeholder="User Name">
+                    <label for="" class="label-user" name="mess-user">(* User name is in correct)</label>
+                </div>
+                <div class="input-form">
+                    <input class="textbox-pass" name="password" type="password" autocomplete="off" placeholder="Password">
+                    <label for="" class="label-pass" name="mess-pass">(* Password is in correct)</label>
+                </div>
+                <div class="form-action">
+                    <div class="remember">
+                        <input class="chk-remember" type="checkbox" value="1" name="remember"> Remember</input>
+                    </div>
+                    <div class="login">
+                        <button class="btn-login" type="submit">Login <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </form>
+            <form class="login-other" style="margin-top:3vw; text-align: center;">
+                <h4>OR LOGIN WITH</h4>
+                <ul class="list-inline social-login">
+                    <li>
+                        <a class="icFacebook" href="#"><img src="../private/images/icFacebook.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a class="icGooglePlus" href="#"><img src="../private/images/icGooglePlus.png" alt=""></a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <!-- END SIDEBAR -->
+    </div>
+    <!-- End Contents -->
+
+    <!-- script -->
+    <script>
+        $(document).ready(function() {
+            $('input.textbox-user[type="text"]').click(function(e) {
+                $('input.textbox-user[type="text"]').each(function() {
+                    $(this).css(
+                        "border", "1px solid red"
+                    );
+                    $('input.textbox-pass[type="password"]').css("border", "1px solid #D3DEE7");
+                })
+            });
+            $('input.textbox-pass[type="password"]').click(function(e) {
+                $('input.textbox-pass[type="password"]').each(function() {
+                    $(this).css(
+                        "border", "1px solid red"
+                    );
+                    $('input.textbox-user[type="text"]').css("border", "1px solid #D3DEE7");
+                })
+            });
+            $('input.textbox-user[type="text"]').focusin(function(e) {
+                $('input.textbox-user[type="text"]').each(function() {
+                    $(this).css(
+                        "border", "1px solid red"
+                    );
+                })
+            });
+            $('input.textbox-user[type="text"]').focusout(function(e) {
+                $('input.textbox-user[type="text"]').each(function() {
+                    $(this).css(
+                        "border", "1px solid #D3DEE7"
+                    );
+                })
+            });
+
+            $('input.textbox-pass[type="password"]').focusin(function(e) {
+                $('input.textbox-pass[type="password"]').each(function() {
+                    $(this).css(
+                        "border", "1px solid red"
+                    );
+                })
+            });
+            $('input.textbox-pass[type="password"]').focusout(function(e) {
+                $('input.textbox-pass[type="password"]').each(function() {
+                    $(this).css(
+                        "border", "1px solid #D3DEE7"
+                    );
+                })
+            });
+            $('input.chk-remember[type="checkbox"]').click(function(e) {
+                $('input.chk-remember[type="checkbox"]').each(function() {
+                    $(this).css({
+                        "outline-color": "red",
+                        "outline-style": "solid",
+                        "outline-width": "1px"
+                    });
+                })
+            });
+            $('input.chk-remember[type="checkbox"]').focusin(function(e) {
+                $('input.chk-remember[type="checkbox"]').each(function() {
+                    $(this).css({
+                        "outline-color": "red",
+                        "outline-style": "solid",
+                        "outline-width": "1px"
+                    });
+                })
+            });
+            $('input.chk-remember[type="checkbox"]').focusout(function(e) {
+                $('input.chk-remember[type="checkbox"]').each(function() {
+                    $(this).css("outline", "none");
+                })
+            });
+
+            $(window).ready(function() {
+                $('input.textbox-user[type="text"]').focus();
+                $('input.textbox-user[type="text"]').css(
+                    "border", "1px solid red"
+                );
+            });
+        })
+    </script>
+</body>
+
+</html>
