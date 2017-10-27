@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dash board</title>
+  <title>New Posts</title>
 
   <!-- Bootstrap -->
   <link href="../public/css/bootstrap.min.css" rel="stylesheet">
@@ -15,11 +15,15 @@
   <link href="../public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Custom styling plus plugins -->
+   <!-- custom design  -->
+  <link href="../public/css/myStyles.css" rel="stylesheet">
+
   <script src="../public/jQuery/jquery-3.2.1.min.js"></script>
   <script src="../public/js/bootstrap.min.js"></script>
-  <!-- custom design  -->
-  <link href="../public/css/myStyles.css" rel="stylesheet">
+ 
   <script src="../public/js/jsCustom.js"></script>
+
+  
 </head>
 <body>
   <div class="container-body">
@@ -180,7 +184,7 @@
     <div class="nav-side-menu">
       <div class="">
         <div class="title-web">
-          <h3><a href="home.html"><i class="fa fa-mortar-board"></i> <span>Workshop Website</span></a>
+          <h3><a href="home.html"><i class="fa fa-mortar-board"></i> <span>Website Hội Thảo</span></a>
           </h3>
         </div>
         <div class="clearfix"></div>
@@ -246,8 +250,8 @@
               <a href="profile.html">
                 <i class="fa fa-user fa-lg"></i> Profile
               </a>
-            </li>
- -->
+            </li> -->
+
             <li>
               <a href="user.html">
                 <i class="fa fa-users fa-lg"></i> Profile
@@ -273,290 +277,257 @@
       <!-- end left navigation -->
       <!-- page content -->
       <div class="x-panel">
-        <h1 class="tismal-page"><i class="fa fa-dashboard"></i> DashBoard</h1>
-
-        <h4 class="managecate" "><i class="fa fa-newspaper-o"></i> News & Events management</h4>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-4 colxs-6 widget-holder">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-lg-8 col-md-8 col-xs-8">
-                    <div class="widget-counter">
-                      <h6>Create News/Events
-                        <small>Last week</small>
-                      </h6>
-                      <h3>
-                        <span class="counter">10</span>
-                      </h3>
+        <div class="panel panel-default">
+          <div class="panel-body">
+          <div class="step_container" >
+<!--             <h2></h2> -->
+            <div id="ff-step" class="ff-active-0">
+              <ul class="services-tabs j-index">
+                <li class="active">
+                  <a href="#step1">
+                    <span class="step-number">
+                      <strong>
+                        <em>1</em>
+                      </strong>
+                    </span>
+                    <span class="tab-text">
+                      List Topics
+                    </span>
+                  </a>
+                </li>
+                <li class>
+                  <a href="#step2">
+                    <span class="step-number">
+                      <strong>
+                        <em>2</em>
+                      </strong>
+                    </span>
+                    <span class="tab-text">
+                      Post Information
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#step3">
+                    <span class="step-number">
+                      <strong>
+                        <em>3</em>
+                      </strong>
+                    </span>
+                    <span class="tab-text">
+                      Review Post
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <div class="progress-filler">
+                <span class="progress-indicator">
+                  <span class="progress-active">
+                  </span>
+                </span>
+              </div>
+              <form role="form">
+                <div class="tab-content">
+                  <div class="tab-pane active" role="tabpanel" id="step1">
+                    <h2 style="color: #9ECDDF;">Danh Sách Chủ Đề</h2>
+                    <!-- <p>Danh Sách Đề tài</p> -->
+                    <div class="row">
+                      <div class="col-lg-3 cus-bor">
+                        <div class="pic-sub">
+                          <img src="../public/images/sprout.jpg" alt="Cinque Terre" width="100%">
+                        </div>
+                        <div class="descipble">
+                          <h6>Khoa Học Công Nghệ</h6>
+                          <p>To get you started</p>
+                        </div>
+                        <div class="status-sub">
+                          <h2>10</h2>
+                          <p>Số lượng bài đã tham gia</p>
+                        </div>
+                        <div class="award">
+                          <h6>Cơ Cấu Giải Thưởng</h6>
+                          <ul>
+                            <li> Một giải nhất: 1.000.000USD</li>
+                            <li> hai giải nhì: 100.000USD</li>
+                            <li> Năm giải ba: 10.000USD</li>
+                          </ul>
+                        </div>
+                        <div class="select-sub" >
+                          <div class="active-sub" id="sub-1">
+                            <i class="fa fa-check-square-o"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 cus-bor">
+                       <div class="pic-sub">
+                        <img src="../public/images/blossom.jpg" alt="Cinque Terre" width="100%">
+                      </div>
+                      <div class="descipble">
+                        <h6>IOT</h6>
+                        <p>To get you started</p>
+                      </div>
+                      <div class="status-sub">
+                        <h2>11</h2>
+                        <p>Số lượng bài đã tham gia</p>
+                      </div>
+                      <div class="award">
+                        <h6>Cơ Cấu Giải Thưởng</h6>
+                        <ul>
+                          <li> Một giải nhất: 1.000.000USD</li>
+                          <li> hai giải nhì: 100.000USD</li>
+                          <li> Năm giải ba: 10.000USD</li>
+                        </ul>
+                      </div>
+                      <div class="select-sub" >
+                        <div id="sub-2">
+                          <i class="fa fa-check-square-o"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 cus-bor">
+                     <div class="pic-sub">
+                      <img src="../public/images/garden.jpg" alt="Cinque Terre" width="100%">
+                    </div>
+                    <div class="descipble">
+                      <h6>API</h6>
+                      <p>To get you started</p>
+                    </div>
+                    <div class="status-sub">
+                      <h2>12</h2>
+                      <p>Số lượng bài đã tham gia</p>
+                    </div>
+                    <div class="award">
+                      <h6>Cơ Cấu Giải Thưởng</h6>
+                      <ul>
+                        <li> Một giải nhất: 1.000.000USD</li>
+                        <li> hai giải nhì: 100.000USD</li>
+                        <li> Năm giải ba: 10.000USD</li>
+                      </ul>
+                    </div>
+                    <div class="select-sub" >
+                      <div id="sub-3">
+                        <i class="fa fa-check-square-o"></i>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-xs-4">
-                    <i class="fa fa-newspaper-o material-icons"></i>
+                  <div class="col-lg-3 cus-bor">
+                   <div class="pic-sub">
+                    <img src="../public/images/forest.jpg" alt="Cinque Terre" width="100%">
                   </div>
-                </div> 
-              </div>
-              <div class="panel-footer modycol">
-                <div style="float: right;">
-                  <button type="button" class="btn btn-primary btn-xs" id="mananew1">
-                    <i class="fa fa-gears"></i> Go to...
-                  </button>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-            </div>  
-          </div>
-
-           <div class="col-lg-4 col-md-4 colxs-6 widget-holder">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-lg-8 col-md-8 col-xs-8">
-                    <div class="widget-counter">
-                      <h6> Modify News/Events                                 
-                        <small>Last week</small>
-                      </h6>
-                      <h3>
-                        <span class="counter">10</span>
-                      </h3>
+                  <div class="descipble">
+                    <h6>Medicine</h6>
+                    <p>To get you started</p>
+                  </div>
+                  <div class="status-sub">
+                    <h2>13</h2>
+                    <p>Số lượng bài đã tham gia</p>
+                  </div>
+                  <div class="award">
+                    <h6>Cơ Cấu Giải Thưởng</h6>
+                    <ul>
+                      <li> Một giải nhất: 1.000.000USD</li>
+                      <li> hai giải nhì: 100.000USD</li>
+                      <li> Năm giải ba: 10.000USD</li>
+                    </ul>
+                  </div>
+                  <div class="select-sub">
+                    <div id="sub-4">
+                      <i class="fa fa-check-square-o"></i>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-xs-4">
-                    <i class="fa fa-gear material-icons"></i>
-                  </div>
-                </div> 
-              </div>
-              <div class="panel-footer modycol">
-                <div style="float: right;">
-                  <button type="button" class="btn btn-primary btn-xs" id="mananew2">
-                    <i class="fa fa-gears"></i> Go to...
-                  </button>
                 </div>
-                <div class="clearfix"></div>
               </div>
-            </div>  
-          </div>
-
-          <div class="col-lg-4 col-md-4 colxs-6 widget-holder">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-lg-8 col-md-8 col-xs-8">
-                    <div class="widget-counter">
-                      <h6>Remove News/Events                 
-                        <small>Last week</small>
-                      </h6>
-                      <h3>
-                        <span class="counter">10</span>
-                      </h3>
+              <ul class="list-inline pull-right">
+                <li><button type="button" class="btn btn-primary next-step" id="steptopic">Next Step</button></li>
+              </ul>
+            </div>
+            <div class="tab-pane cus-pan" role="tabpanel" id="step2">
+              <h2>Thông tin bài dự thi</h2>
+              <hr>
+              <div class="row">
+                <div class="col-lg-9 -sty-form">
+                  <div class="row">
+                    <div class="col-md-2 spacetoge">
+                      <label>Tên bài đăng * </label>
+                    </div>
+                    <div class="col-md-10 spacetoge" id="name-post">
+                      <input type="text " name="namepost" id="namepost" placeholder="Post's Name"><span class="fa fa-check valid"></span><span class="fa fa-close invalid"></span>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-xs-4">
-                    <i class="fa fa-eye-slash material-icons"></i>
-                  </div>
-                </div> 
-              </div>
-              <div class="panel-footer modycol">
-                <div style="float: right;">
-                  <button type="button" class="btn btn-primary btn-xs" id="mananew3">
-                    <i class="fa fa-gears"></i> Go to...
-                  </button>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-            </div>  
-          </div>
-        </div>
-
-        <h4 class="managecate" "><i class="fa fa-newspaper-o"></i> Users management</h4>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-4 colxs-6 widget-holder">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-lg-8 col-md-8 col-xs-8">
-                    <div class="widget-counter">
-                      <h6>Create New User
-                        <small>Last week</small>
-                      </h6>
-                      <h3>
-                        <span class="counter">10</span>
-                      </h3>
+                  <div class="clearfix"></div>
+                  <div class="row">
+                    <div class="col-md-2 spacetoge">
+                      <label>Số chương * </label>
+                    </div>
+                    <div class="col-md-10 spacetoge" id="number-chapter">
+                      <input type="number" id="numberchapter" name="numberchapter" placeholder="Number chapter"><span class="fa fa-check valid"></span><span class="fa fa-close invalid"></span>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-xs-4">
-                    <i class="fa fa-users material-icons"></i>
-                  </div>
-                </div> 
-              </div>
-              <div class="panel-footer modycol">
-                <div style="float: right;">
-                  <button type="button" class="btn btn-primary btn-xs" id="manauser1">
-                    <i class="fa fa-gears"></i> Go to...
-                  </button>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-            </div>  
-          </div>
+                  <div class="clearfix"></div>
+                  <div class="row">
+                    <div class="col-md-2 spacetoge">
+                      <label>Tóm tắt nội dung * </label>
 
-           <div class="col-lg-4 col-md-4 colxs-6 widget-holder">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-lg-8 col-md-8 col-xs-8">
-                    <div class="widget-counter">
-                      <h6> Modify Users                       
-                        <small>Last week</small>
-                      </h6>
-                      <h3>
-                        <span class="counter">10</span>
-                      </h3>
+                    </div>
+                    <div class="col-md-10 spacetoge" id="-summary">
+                      <textarea rows="10" name="summary" id="summary" placeholder="Say something for us" ></textarea><span class="fa fa-check valid"></span><span class="fa fa-close invalid"></span>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-xs-4">
-                    <i class="fa fa-user-md material-icons"></i>
-                  </div>
-                </div> 
-              </div>
-              <div class="panel-footer modycol">
-                <div style="float: right;">
-                  <button type="button" class="btn btn-primary btn-xs" id="manauser2">
-                    <i class="fa fa-gears"></i> Go to...
-                  </button>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-            </div>  
-          </div>
 
-          <div class="col-lg-4 col-md-4 colxs-6 widget-holder">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-lg-8 col-md-8 col-xs-8">
-                    <div class="widget-counter">
-                      <h6>Remove User                 
-                        <small>Last week</small>
-                      </h6>
-                      <h3>
-                        <span class="counter">10</span>
-                      </h3>
+                  <div class="clearfix"></div>
+
+                  <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-md-7">
+                      <div class="panel panel-default cus-bor">
+                        <div class="panel-body addfile">
+                          <div class="space-fileup">
+                            <label class="input-label" for="file">
+                              <i class="fa fa-upload"></i>
+                              <span class="label-span">Select file to upload</span></label>
+                            <input type="file" name="" id="file" multiple="true">
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                    <div class="col-lg-3"></div>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-xs-4">
-                    <i class="fa fa-remove material-icons"></i>
-                  </div>
-                </div> 
-              </div>
-              <div class="panel-footer modycol">
-                <div style="float: right;">
-                  <button type="button" class="btn btn-primary btn-xs" id="manause3r">
-                    <i class="fa fa-gears"></i> Go to...
-                  </button>
                 </div>
-                <div class="clearfix"></div>
-              </div>
-            </div>  
-          </div>
-        </div>
-
-        <h4 class="managecate" "><i class="fa fa-bookmark-o"></i> Topics management</h4>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-4 colxs-6 widget-holder">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-lg-8 col-md-8 col-xs-8">
-                    <div class="widget-counter">
-                      <h6>Create New Topic
-                        <small>Last week</small>
-                      </h6>
-                      <h3>
-                        <span class="counter">10</span>
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-xs-4">
-                    <i class="fa fa-bell-o material-icons"></i>
-                  </div>
-                </div> 
-              </div>
-              <div class="panel-footer modycol">
-                <div style="float: right;">
-                  <button type="button" class="btn btn-primary btn-xs" id="manatopic1">
-                    <i class="fa fa-gears"></i> Go to...
-                  </button>
+                <div class="col-lg-3 resize-pic">
+                  <img src="../public/images/day-pass.png" width="100%">
                 </div>
-                <div class="clearfix"></div>
-              </div>
-            </div>  
-          </div>
+              </div>  
+              <ul class="list-inline pull-right">
+                <li><button type="button" class="btn btn-default prev-step" id="prevtopic">Previous</button></li>
+                <li><button class="btn btn-primary next-step" id="stepsubmit">Next Step</button></li> <!-- next-step -->
+              </ul>
+            </div>
+            <div class="tab-pane" role="tabpanel" id="step3">
+              <h2 style="color: #9ECDDF;">Bản đăng chính thức</h2>
+              <div class="row">
+                <div class="col-md-8">
 
-           <div class="col-lg-4 col-md-4 colxs-6 widget-holder">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-lg-8 col-md-8 col-xs-8">
-                    <div class="widget-counter">
-                      <h6> Modify Topic                               
-                        <small>Last week</small>
-                      </h6>
-                      <h3>
-                        <span class="counter">10</span>
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-xs-4">
-                    <i class="fa fa-cogs material-icons"></i>
-                  </div>
-                </div> 
-              </div>
-              <div class="panel-footer modycol">
-                <div style="float: right;">
-                  <button type="button" class="btn btn-primary btn-xs" id="manatopic2">
-                    <i class="fa fa-gears"></i> Go to...
-                  </button>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-            </div>  
-          </div>
+                  <p>Updating...</p>
 
-          <div class="col-lg-4 col-md-4 colxs-6 widget-holder">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="row">
-                  <div class="col-lg-8 col-md-8 col-xs-8">
-                    <div class="widget-counter">
-                      <h6>Remove Topic                
-                        <small>Last week</small>
-                      </h6>
-                      <h3>
-                        <span class="counter">10</span>
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-xs-4">
-                    <i class="fa fa-bell-slash-o material-icons"></i>
-                  </div>
-                </div> 
-              </div>
-              <div class="panel-footer modycol">
-                <div style="float: right;">
-                  <button type="button" class="btn btn-primary btn-xs" id="manatopic3">
-                    <i class="fa fa-gears"></i> Go to...
-                  </button>
                 </div>
-                <div class="clearfix"></div>
+                <div class="col-md-4">
+                  <img src="../public/images/self.png" class="img-rounded" alt="Cinque Terre" width="100%">
+                </div>
               </div>
-            </div>  
+              <ul class="list-inline pull-right">
+                <li><button type="button" class="btn btn-default prev-step" id="prevsubmit">Previous</button></li>
+                <li><button type="button" class="btn btn-primary btn-info-full next-step" >Next Step</button></li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
           </div>
+          </form>
         </div>
       </div>
+      </div>
+      <!-- /Step -->
+    </div>
+  </div>
       <!--  end page content -->
       <footer>
         <div class="row">
