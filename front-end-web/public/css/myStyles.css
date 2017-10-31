@@ -52,19 +52,6 @@
   margin: 0px;
   line-height: 35px;
   cursor: pointer;
-  /*    
-    .collapsed{
-       .arrow:before{
-                 font-family: FontAwesome;
-                 content: "\f053";
-                 display: inline-block;
-                 padding-left:10px;
-                 padding-right: 10px;
-                 vertical-align: middle;
-                 float:right;
-            }
-     }
-*/
 }
 .nav-side-menu ul :not(collapsed) .arrow:before,
 .nav-side-menu li :not(collapsed) .arrow:before {
@@ -1976,4 +1963,22 @@ td button.sizebutton span{
     width: 40px !important;
     height: 40px !important;
   }
+}
+
+.pagination>li>a{
+  border-radius: 0px;
+}
+select.topicsel{
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 5px;
+}
+h1.error-number{
+    font-size: 90px;
+    line-height: 90px;
+    margin: 20px 0;
+    color: #fff;
+    padding-top: 50px;
+}
+.colorerror{
+  color: #fff;
 }
