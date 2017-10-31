@@ -10,16 +10,16 @@
   <title>List Posts</title>
 
   <!-- Bootstrap -->
-  <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
-  <link href="../public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Custom styling plus plugins -->
-  <script src="../public/jQuery/jquery-3.2.1.min.js"></script>
-  <script src="../public/js/bootstrap.min.js"></script>
+  <script src="../../public/jQuery/jquery-3.2.1.min.js"></script>
+  <script src="../../public/js/bootstrap.min.js"></script>
   <!-- custom design  -->
-  <link href="../public/css/myStyles.css" rel="stylesheet">
-  <script src="../public/js/jsCustom.js"></script>
+  <link href="../../public/css/myStyles.css" rel="stylesheet">
+  <script src="../../public/js/jsCustom.js"></script>
 </head>
 <body>
   <div class="container-body">
@@ -36,7 +36,7 @@
           <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
             <li >
               <a>
-                <span class="image"><img src="../public/images/1.jpg" alt="Profile Image" /></span>
+                <span class="image"><img src="../../public/images/1.jpg" alt="Profile Image" /></span>
                 <span>
                   <span>HoangKimVu</span>
                   <span class="time">3 mins ago</span>
@@ -48,7 +48,7 @@
             </li>
             <li>
               <a>
-                <span class="image"><img src="../public/images/1.jpg" alt="Profile Image" /></span>
+                <span class="image"><img src="../../public/images/1.jpg" alt="Profile Image" /></span>
                 <span>
                   <span>HoangKimVu</span>
                   <span class="time">3 mins ago</span>
@@ -60,7 +60,7 @@
             </li>
             <li>
               <a>
-                <span class="image"><img src="../public/images/1.jpg" alt="Profile Image" /></span>
+                <span class="image"><img src="../../public/images/1.jpg" alt="Profile Image" /></span>
                 <span>
                   <span>HoangKimVu</span>
                   <span class="time">3 mins ago</span>
@@ -72,7 +72,7 @@
             </li>
             <li>
               <a>
-                <span class="image"><img src="../public/images/1.jpg" alt="Profile Image" /></span>
+                <span class="image"><img src="../../public/images/1.jpg" alt="Profile Image" /></span>
                 <span>
                   <span>HoangKimVu</span>
                   <span class="time">3 mins ago</span>
@@ -103,7 +103,7 @@
           <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
             <li >
               <a>
-                <span class="image"><img src="../public/images/1.jpg" alt="Profile Image" /></span>
+                <span class="image"><img src="../../public/images/1.jpg" alt="Profile Image" /></span>
                 <span>
                   <span>HoangKimVu</span>
                   <span class="time">3 mins ago</span>
@@ -115,7 +115,7 @@
             </li>
             <li>
               <a>
-                <span class="image"><img src="../public/images/1.jpg" alt="Profile Image" /></span>
+                <span class="image"><img src="../../public/images/1.jpg" alt="Profile Image" /></span>
                 <span>
                   <span>HoangKimVu</span>
                   <span class="time">3 mins ago</span>
@@ -127,7 +127,7 @@
             </li>
             <li>
               <a>
-                <span class="image"><img src="../public/images/1.jpg" alt="Profile Image" /></span>
+                <span class="image"><img src="../../public/images/1.jpg" alt="Profile Image" /></span>
                 <span>
                   <span>HoangKimVu</span>
                   <span class="time">3 mins ago</span>
@@ -139,7 +139,7 @@
             </li>
             <li>
               <a>
-                <span class="image"><img src="../public/images/1.jpg" alt="Profile Image" /></span>
+                <span class="image"><img src="../../public/images/1.jpg" alt="Profile Image" /></span>
                 <span>
                   <span>HoangKimVu</span>
                   <span class="time">3 mins ago</span>
@@ -162,7 +162,7 @@
           
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle"  href="#" data-toggle="dropdown"><img style="height: 20px;width: 20px; padding: 0 0 0px" src="../public/images/1.jpg" class="img-circle" alt="">
+          <a class="dropdown-toggle"  href="#" data-toggle="dropdown"><img style="height: 20px;width: 20px; padding: 0 0 0px" src="../../public/images/1.jpg" class="img-circle" alt="">
             Cong Trinh Van
             <span class="fa fa-angle-down"></span>
           </a>
@@ -295,15 +295,6 @@
             
           </div>
           <div class="panel-body">
-            <div class="sorttable">
-              <label for="list topic">List of topic: </label>
-              <select class="topicsel">
-                <option>All</option>
-                <option>Information Technology</option>
-                <option>API</option>
-                <option>IOT</option>
-              </select>
-            </div>
             <table class="table table-bordered custable">
               <thead>
                 <tr>
@@ -314,7 +305,7 @@
                   <th>Action</th>
                 </tr>
               </thead>
-              <tbody id="myTable">
+              <tbody>
                 <tr class="cus-colo">
                   <td>1</td>
                   <td>Bài Dự Thi 1</td>
@@ -427,241 +418,14 @@
                     <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
                   </td>
                 </tr>
-
-                <tr class="cus-colo">
-                  <td>11</td>
-                  <td>Bài Dự Thi 1</td>
-                  <td>Chủ đề 1</td>
-                  <td>Updating</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>Bài Dự Thi 2</td>
-                  <td>Chủ đề 2</td>
-                  <td class="-pass">Pass round 1</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr class="cus-colo">
-                  <td>13</td>
-                  <td>Bài Dự Thi 3</td>
-                  <td>Chủ đề 3</td>
-                  <td>Updating</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>14</td>
-                  <td>Bài Dự Thi 4</td>
-                  <td>Chủ đề 4</td>
-                  <td>Updating</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr class="cus-colo">
-                  <td>15</td>
-                  <td>Bài Dự Thi 1</td>
-                  <td>Chủ đề 1</td>
-                  <td>Send</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>16</td>
-                  <td>Bài Dự Thi 2</td>
-                  <td>Chủ đề 2</td>
-                  <td class="-pass">Pass round 1</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr class="cus-colo">
-                  <td>17</td>
-                  <td>Bài Dự Thi 3</td>
-                  <td>Chủ đề 3</td>
-                  <td>Updating</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>18</td>
-                  <td>Bài Dự Thi 4</td>
-                  <td>Chủ đề 4</td>
-                  <td>Updating</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box"> message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr class="cus-colo">
-                  <td>19</td>
-                  <td>Bài Dự Thi 3</td>
-                  <td>Chủ đề 3</td>
-                  <td>Updating</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>20</td>
-                  <td>Bài Dự Thi 4</td>
-                  <td>Chủ đề 4</td>
-                  <td>Updating</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box"> message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-
-                <tr class="cus-colo">
-                  <td>21</td>
-                  <td>Bài Dự Thi 1</td>
-                  <td>Chủ đề 1</td>
-                  <td>Updating</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>22</td>
-                  <td>Bài Dự Thi 2</td>
-                  <td>Chủ đề 2</td>
-                  <td class="-pass">Pass round 1</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr class="cus-colo">
-                  <td>23</td>
-                  <td>Bài Dự Thi 3</td>
-                  <td>Chủ đề 3</td>
-                  <td>Updating</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>24</td>
-                  <td>Bài Dự Thi 4</td>
-                  <td>Chủ đề 4</td>
-                  <td>Updating</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr class="cus-colo">
-                  <td>25</td>
-                  <td>Bài Dự Thi 1</td>
-                  <td>Chủ đề 1</td>
-                  <td>Send</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>26</td>
-                  <td>Bài Dự Thi 2</td>
-                  <td>Chủ đề 2</td>
-                  <td class="-pass">Pass round 1</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr class="cus-colo">
-                  <td>27</td>
-                  <td>Bài Dự Thi 3</td>
-                  <td>Chủ đề 3</td>
-                  <td>Updating</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>28</td>
-                  <td>Bài Dự Thi 4</td>
-                  <td>Chủ đề 4</td>
-                  <td>Updating</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box"> message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr class="cus-colo">
-                  <td>29</td>
-                  <td>Bài Dự Thi 3</td>
-                  <td>Chủ đề 3</td>
-                  <td>Updating</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>30</td>
-                  <td>Bài Dự Thi 4</td>
-                  <td>Chủ đề 4</td>
-                  <td>Updating</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box"> message</button>
-                    <input type="file" id="fileLoader" name="files" title="Load File" style = "display:none;" />
-                    <button id="btnOpenFileDialog" type="button" class="btn btn-info btn-xs" onclick="openfileDialog();">modify</button>
-                  </td>
-                </tr>
               </tbody>
             </table>
 
-            <div class="row">
-              <div class="col-md-5 col-md-offset-7">
-                <ul class="pagination pager" id="myPager">
+            <br>
+            <hr>
 
-                </ul>
-              </div>
+            <div class="each-post-topic">
+              
             </div>
           </div>
           <div class="modal fade modal-md" id="message-box" role="dialog">

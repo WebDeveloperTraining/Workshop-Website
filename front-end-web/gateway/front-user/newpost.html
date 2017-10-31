@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>New Posts</title>
+
+  <!-- Bootstrap -->
+  <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../../public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom styling plus plugins -->
+  <script src="../../public/jQuery/jquery-3.2.1.min.js"></script>
+  <script src="../../public/js/bootstrap.min.js"></script>
+  <!-- custom design  -->
+  <link href="../../public/css/myStyles.css" rel="stylesheet">
+  <script src="../../public/js/jsCustom.js"></script>
+  <script src="../../public/js/validate.min.js"></script>
+</head>
+<body>
+  <div class="container-body">
+    <div class="row">
+     <!--  top navigation -->
+     <div class="top-navigation">
+      <ul>
+        <li>
+          <a href="#"><i id="inbox" class="fa fa-envelope-o" aria-hidden="true" style="font-size: 15px;">
+            <sup><span class="badge badge-default"  style="background-color: #1ABB9C;">3</span></sup></i>
+          </a>
+        </li>
+        <li>
+          <a href="#"><i id="notify" class="fa fa-bell-o" aria-hidden="true" style="font-size: 15px;">
+            <sup><span class="badge badge-default" style="background-color: #1ABB9C;">7</span></sup></i>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle"  href="#" data-toggle="dropdown"><img style="height: 20px;width: 20px; padding: 0 0 0px" src="../../public/images/1.jpg" class="img-circle" alt="">
+            Cong Trinh Van
+            <span class="fa fa-angle-down"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="profile.html"><i class="fa fa-user"></i> My Profile</a></li>
+            <li><a href="#"><i class="fa fa-calendar"></i> My Calendar</a></li>
+            <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+    <!-- end top navigation -->
+    <!--  left navigation -->
+    <div class="nav-side-menu">
+      <div class="">
+        <div class="title-web">
+          <h3><a href="home.html"><i class="fa fa-mortar-board"></i> <span>Website Hội Thảo</span></a>
+          </h3>
+        </div>
+        <div class="clearfix"></div>
+        <div class="img-info hidesmall">
+          <div class="pic">
+            <img src="../../public/images/1.jpg" class="img-circle" alt="Cinque Terre" width="50" height="50">Wellcome,
+          </div>
+          <div class="info hidesmall">
+            <h4> Công Trịnh Văn</h4>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+      </div>
+      <div class="hidesmall"><span>General</span></div>
+      <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+      <div class="menu-list">
+
+        <ul id="menu-content" class="menu-content collapse out">
+          <li>
+            <a href="dashboard.html">
+              <i class="fa fa-dashboard fa-lg"></i> Dashboard
+            </a>
+          </li>
+
+          <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+            <a href="#"><i class="fa fa-asterisk fa-lg"></i> Manage posts <span class="arrow"></span></a>
+          </li>
+          <ul class="sub-menu collapse" id="products">
+            <li class="active"><a href="#">General</a></li>
+            <li><a href="newpost.html">New registration</a></li>
+            <li><a href="listpost.html">Post list</a></li>
+            <li><a href="#">Browse the article</a></li>
+            </ul>
+
+
+            <li data-toggle="collapse" data-target="#service" class="collapsed">
+              <a href="#"><i class="fa fa-globe fa-lg"></i> Services <span class="arrow"></span></a>
+            </li>  
+            <ul class="sub-menu collapse" id="service">
+              <li>Online counseling</li>
+              <li>Troubleshooting</li>
+            </ul>
+
+
+            <li data-toggle="collapse" data-target="#new" class="collapsed">
+              <a href="#"><i class="fa fa-newspaper-o fa-lg"></i> Manage News <span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="new">
+              <li>Post</li>
+              <li>Update</li>
+              <li>Remove</li>
+            </ul>
+
+            <li>
+              <a href="#">
+                <i class="fa fa-bookmark fa-lg"></i> Workshop process
+              </a>
+            </li>
+
+            <li>
+              <a href="profile.html">
+                <i class="fa fa-user fa-lg"></i> Profile
+              </a>
+            </li>
+
+            <li>
+              <a href="user.html">
+                <i class="fa fa-users fa-lg"></i> Users
+              </a>
+            </li>
+          </ul>
+          <div class="logout footer-bar">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Lock">
+              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- end left navigation -->
+      <!-- page content -->
+      <div class="x-panel">
+        <div class="row">
+          <section>
+            <div class="wizard">
+              <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs" role="tablist">
+
+                  <li role="presentation" class="active">
+                    <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                      <span class="round-tab">
+                        <i class="glyphicon glyphicon-picture"></i>
+                        
+                      </span>
+                    </a>
+                  </li>
+
+                  <li role="presentation" class="disabled">
+                    <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                      <span class="round-tab">
+                        <i class="glyphicon glyphicon-pencil"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li role="presentation" class="disabled">
+                    <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                      <span class="round-tab">
+                        <i class="glyphicon glyphicon-folder-open"></i>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li role="presentation" class="disabled">
+                    <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                      <span class="round-tab">
+                        <i class="glyphicon glyphicon-ok"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <form role="form">
+                <div class="tab-content">
+                  <div class="tab-pane active" role="tabpanel" id="step1">
+                    <h2 style="color: #9ECDDF;">Danh Sách Chủ Đề</h2>
+                    <!-- <p>Danh Sách Đề tài</p> -->
+                    <div class="row">
+                      <div class="col-lg-3 cus-bor">
+                         <div class="pic-sub">
+                          <img src="../../public/images/sprout.jpg" alt="Cinque Terre" width="100%">
+                         </div>
+                         <div class="descipble">
+                          <h6>Khoa Học Công Nghệ</h6>
+                          <p>To get you started</p>
+                         </div>
+                         <div class="status-sub">
+                          <h2>10</h2>
+                          <p>Số lượng bài đã tham gia</p>
+                         </div>
+                         <div class="award">
+                          <h6>Cơ Cấu Giải Thưởng</h6>
+                          <ul>
+                            <li> Một giải nhất: 1.000.000USD</li>
+                            <li> hai giải nhì: 100.000USD</li>
+                            <li> Năm giải ba: 10.000USD</li>
+                          </ul>
+                         </div>
+                         <div class="select-sub" >
+                          <div class="active-sub" id="sub-1">
+                            <i class="fa fa-check-square-o"></i>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="col-lg-3 cus-bor">
+                         <div class="pic-sub">
+                          <img src="../../public/images/blossom.jpg" alt="Cinque Terre" width="100%">
+                         </div>
+                         <div class="descipble">
+                          <h6>IOT</h6>
+                          <p>To get you started</p>
+                         </div>
+                         <div class="status-sub">
+                          <h2>11</h2>
+                          <p>Số lượng bài đã tham gia</p>
+                         </div>
+                         <div class="award">
+                          <h6>Cơ Cấu Giải Thưởng</h6>
+                          <ul>
+                            <li> Một giải nhất: 1.000.000USD</li>
+                            <li> hai giải nhì: 100.000USD</li>
+                            <li> Năm giải ba: 10.000USD</li>
+                          </ul>
+                         </div>
+                         <div class="select-sub" >
+                          <div id="sub-2">
+                            <i class="fa fa-check-square-o"></i>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="col-lg-3 cus-bor">
+                         <div class="pic-sub">
+                          <img src="../../public/images/garden.jpg" alt="Cinque Terre" width="100%">
+                         </div>
+                         <div class="descipble">
+                          <h6>API</h6>
+                          <p>To get you started</p>
+                         </div>
+                         <div class="status-sub">
+                          <h2>12</h2>
+                          <p>Số lượng bài đã tham gia</p>
+                         </div>
+                         <div class="award">
+                          <h6>Cơ Cấu Giải Thưởng</h6>
+                          <ul>
+                            <li> Một giải nhất: 1.000.000USD</li>
+                            <li> hai giải nhì: 100.000USD</li>
+                            <li> Năm giải ba: 10.000USD</li>
+                          </ul>
+                         </div>
+                         <div class="select-sub" >
+                          <div id="sub-3">
+                            <i class="fa fa-check-square-o"></i>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="col-lg-3 cus-bor">
+                         <div class="pic-sub">
+                          <img src="../../public/images/forest.jpg" alt="Cinque Terre" width="100%">
+                         </div>
+                         <div class="descipble">
+                          <h6>Medicine</h6>
+                          <p>To get you started</p>
+                         </div>
+                         <div class="status-sub">
+                          <h2>13</h2>
+                          <p>Số lượng bài đã tham gia</p>
+                         </div>
+                         <div class="award">
+                          <h6>Cơ Cấu Giải Thưởng</h6>
+                          <ul>
+                            <li> Một giải nhất: 1.000.000USD</li>
+                            <li> hai giải nhì: 100.000USD</li>
+                            <li> Năm giải ba: 10.000USD</li>
+                          </ul>
+                         </div>
+                         <div class="select-sub">
+                          <div id="sub-4">
+                            <i class="fa fa-check-square-o"></i>
+                          </div>
+                         </div>
+                      </div>
+                    </div>
+                    <ul class="list-inline pull-right">
+                      <li><button type="button" class="btn btn-primary next-step">Next Step</button></li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane cus-pan" role="tabpanel" id="step2">
+                    <h2>Thông tin bài dự thi</h2>
+                    <hr>
+                    <div class="row">
+                      <div class="col-lg-9 -sty-form">
+                        <form id="form-post" class="blocks" action="#" method="post">
+                          <div class="row">
+                            <div class="col-md-2 spacetoge">
+                              <label>Tên bài đăng * </label>
+                            </div>
+                            <div class="col-md-10 spacetoge">
+                              <input type="text " name="namepost" placeholder="Post's Name" required>
+                            </div>
+                          </div>
+                          <div class="clearfix"></div>
+                          <div class="row">
+                            <div class="col-md-2 spacetoge">
+                              <label>Số chương * </label>
+                            </div>
+                            <div class="col-md-10 spacetoge">
+                              <input type="number" name="numberchapter" placeholder="Number chapter" required>
+                            </div>
+                          </div>
+                          <div class="clearfix"></div>
+                          <div class="row">
+                            <div class="col-md-2 spacetoge">
+                              <label>Tóm tắt nội dung * </label>
+
+                            </div>
+                            <div class="col-md-10 spacetoge">
+                              <textarea rows="10" name="summary" placeholder="Say something for us" required="true"></textarea>
+                            </div>
+                          </div>
+                          <div style="float: right;">
+                             <button type="submit" class="btn btn-primary" id="inf-post">Submit</button>
+                          </div>
+                          <div class="clearfix"></div>
+                         
+                        </form>
+                      </div>
+                      <div class="col-lg-3">
+                        <img src="../../public/images/day-pass.png" width="100%">
+                      </div>
+                    </div>  
+                    <ul class="list-inline pull-right">
+                      <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                      <li><button type="submit" class="btn btn-primary next-step" disabled="true">Next Step</button></li> <!-- next-step -->
+                    </ul>
+                  </div>
+                  <div class="tab-pane" role="tabpanel" id="step3">
+                    <h2 style="color: #9ECDDF;">Bản đăng chính thức</h2>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="panel panel-default cus-bor">
+                          <div class="panel-body addfile">
+                            <div class="space-fileup">
+                              <label class="input-label" for="file">
+                                <i class="fa fa-upload"></i>
+                                <span class="label-span">Select file to upload</span></label>
+                              <input type="file" name="" id="file" multiple="true">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <img src="../../public/images/self.png" class="img-rounded" alt="Cinque Terre" width="100%">
+                      </div>
+                    </div>
+                    <ul class="list-inline pull-right">
+                      <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                      <li><button type="button" class="btn btn-default next-step">Skip</button></li>
+                      <li><button type="button" class="btn btn-primary btn-info-full next-step">Next Step</button></li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane" role="tabpanel" id="complete">
+                    <h2 style="color: #9ECDDF;">Hoàn thành thông tin</h2>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="panel panel-default">
+                          <div class="panel-body cus-bor">
+                            <div id="post-information" class="information-post">
+                              <ul>
+                                <li>Chủ đề: <span id="f-chude">IOT</span></li>
+                                <li>Tên bài: <span id="f-namepost">Ứng dụng IOT vào nông nghiệp</span></li>
+                                <li>Số chương: <span style="color: red;" id="f-chapter">10<small></small></span></li>
+                                <li>Tóm tắt: <span id="f-descripble">Why do we use it?
+                                   is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                </span></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="list-inline pull-right">
+                      <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                      
+                      <li><button type="button" class="btn btn-primary btn-info-full next-step" id="submit-post">Submit</button></li>
+                    </ul>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!--  end page content -->
+      <footer>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-12"></div>
+          <div class="col-lg-4 col-md-4 col-xs-12"></div>
+          <div class="col-lg-4 col-md-4 col-xs-12">
+            <h5>CopyRight &copy; 2017 - Trung tâm hội thảo Việt Nam Express</h5>
+            <h6><strong>Địa chỉ :</strong> 01 Võ Văn Ngân, phường Linh Chiểu, quận Thủ Đức, TP.Hồ Chí Minh</h6>
+            <h6><strong>Điện thoại :</strong> (+84) 1684 648 350</h6>
+            <h6><strong>E-mail :</strong> trungtamhoithao@gmail.com</h6>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
