@@ -1,4 +1,6 @@
-
+.x-panel{
+  min-height: 1200px;
+}
 .title-web h3{
   padding-top: 0px;
   color: white;
