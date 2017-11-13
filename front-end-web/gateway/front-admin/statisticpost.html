@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>List Posts</title>
+  <title>Statistic</title>
 
   <!-- Bootstrap -->
   <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,8 @@
   <!-- custom design  -->
   <link href="../../public/css/myStyles.css" rel="stylesheet">
   <script src="../../public/js/jsCustom.js"></script>
+  <script src="../../public/js/table2excel.js"></script>
+  
 </head>
 <body>
   <div class="container-body">
@@ -207,13 +209,13 @@
             </a>
           </li>
 
-          <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+          <li  data-toggle="collapse" data-target="#lp" class="collapsed active">
             <a href="#"><i class="fa fa-asterisk fa-lg"></i> Manage posts <span class="arrow"></span></a>
           </li>
-          <ul class="sub-menu collapse" id="products">
+          <ul class="sub-menu collapse" id="lp">
             <li class="active"><a href="#">General</a></li>
-            <li><a href="newpost2.html">New registration</a></li>
-            <li><a href="#listpost.html">Post list</a></li>
+            <li><a href="newpost.html">New registration</a></li>
+            <li><a href="listpost.html">Post list</a></li>
             <li><a href="#">Browse the article</a></li>
             </ul>
 
@@ -242,11 +244,11 @@
               </a>
             </li>
 
-            <li>
+           <!--  <li>
               <a href="profile.html">
                 <i class="fa fa-user fa-lg"></i> Profile
               </a>
-            </li>
+            </li> -->
 
             <li>
               <a href="user.html">
@@ -273,7 +275,7 @@
       <!-- end left navigation -->
       <!-- page content -->
       <div class="x-panel">
-        <h1 class="tismal-page">Contest list</h1>
+        <h1 class="tismal-page">Browse the article</h1>
         <div class="row">
           <div class="col-lg-4 co-md-4 col-xs-12">
             
@@ -283,235 +285,107 @@
           </div>
         </div>
         <div class="panel panel-default" style="width: 100%;">
-          <div class="panel-heading" style="padding:0px; width: 100%;">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-xs-12">
-                <h3 class="detaillistt">Detailed list</h3>
-              </div>
-              <div class="col-lg-6 col-md-6 col-xs-12">
-                <small class="smalldetaillistt" style="padding-top: 40px; float: right;">Date Update: Tusesday, October 3, 2017</small>
-              </div>
+
+           <div class="panel-body">
+             <div class="sorttopic">
+              <label for="list topic">List of topic: </label>
+              <select class="topicsel">
+                <option>All</option>
+                <option>Information Technology</option>
+                <option>API</option>
+                <option>IOT</option>
+              </select>
+              <label for="list topic">Status: </label>
+              <select class="topicsel form-group" >
+                <option>All</option>
+                <option>Seen</option>
+                <option>pass 1</option>
+                <option>pass 2</option>
+              </select>
             </div>
-            
-          </div>
-          <div class="panel-body">
-            <table class="table table-bordered custable">
+            <hr>
+            <div class=""  >
+            <table class="table table-bordered custable table-hover" id="tablestatistic">
               <thead>
                 <tr>
                   <th>Numerical order</th>
                   <th>Post name</th>
                   <th>Topic</th>
-                  <th>Status</th>
-                  <th>Action</th>
+                  <th>Author</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="myTable">
                 <tr class="cus-colo">
                   <td>1</td>
                   <td>Bài Dự Thi 1</td>
                   <td>Chủ đề 1</td>
-                  <td>Updating</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                  </td>
+                  <td>Hoang Kim Vu</td>
+                  
                 </tr>
                 <tr>
                   <td>2</td>
                   <td>Bài Dự Thi 2</td>
                   <td>Chủ đề 2</td>
-                  <td class="-pass">Pass round 1</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                  </td>
+                  <td>Hoang Kim Vu</td>
                 </tr>
                 <tr class="cus-colo">
                   <td>3</td>
                   <td>Bài Dự Thi 3</td>
                   <td>Chủ đề 3</td>
-                  <td>Updating</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                  </td>
+                  <td>Hoang Kim Vu</td>
                 </tr>
                 <tr>
                   <td>4</td>
                   <td>Bài Dự Thi 4</td>
                   <td>Chủ đề 4</td>
-                  <td>Updating</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                  </td>
+                  <td>Hoang Kim Vu</td>
                 </tr>
                 <tr class="cus-colo">
                   <td>5</td>
                   <td>Bài Dự Thi 1</td>
                   <td>Chủ đề 1</td>
-                  <td>Send</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                  </td>
+                  <td>Hoang Kim Vu</td>
                 </tr>
                 <tr>
                   <td>6</td>
                   <td>Bài Dự Thi 2</td>
                   <td>Chủ đề 2</td>
-                  <td class="-pass">Pass round 1</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                  </td>
+                  <td>Hoang Kim Vu</td>
                 </tr>
                 <tr class="cus-colo">
                   <td>7</td>
                   <td>Bài Dự Thi 3</td>
                   <td>Chủ đề 3</td>
-                  <td>Updating</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                  </td>
+                  <td>Hoang Kim Vu</td>
                 </tr>
                 <tr>
                   <td>8</td>
                   <td>Bài Dự Thi 4</td>
                   <td>Chủ đề 4</td>
-                  <td>Updating</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box"> message</button>
-                  </td>
+                  <td>Hoang Kim Vu</td>
                 </tr>
                 <tr class="cus-colo">
                   <td>9</td>
                   <td>Bài Dự Thi 3</td>
                   <td>Chủ đề 3</td>
-                  <td>Updating</td>
-                  <td>
-                    <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box">message</button>
-                  </td>
+                  <td>Hoang Kim Vu</td>
                 </tr>
                 <tr>
                   <td>10</td>
                   <td>Bài Dự Thi 4</td>
                   <td>Chủ đề 4</td>
-                  <td>Updating</td>
-                  <td>
-                     <button type="button" class="btn btn-warning btn-xs sizebutton" data-toggle="modal" data-target="#message-box"> message</button>
-                  </td>
+                  <td>Hoang Kim Vu</td>
                 </tr>
               </tbody>
             </table>
-
-            <br>
-            <hr>
-
-            <!-- detail -->
-            <div class="row">
-              <div class="col-lg-9 -sty-form">
-                <form id="form-post" class="blocks" action="#" method="post">
-                  <div class="row" style="padding-top: 30px;">
-                    <div class="col-md-3 spacetoge">
-                      <label>Topic * </label>
-                    </div>
-                    <div class="col-md-9 spacetoge">
-                      <select disabled="true">
-                        <option>1</option>
-                        <option>1</option>
-                        <option>1</option>
-                        <option>1</option>
-                        <option>1</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3 spacetoge">
-                      <label id="pn">Post's Name * </label>
-                    </div>
-                    <div class="col-md-9 spacetoge">
-                      <input type="text " name="namepost" id="namepost" placeholder="Post's Name" disabled="true">
-                    </div>
-                  </div>
-                  <div class="clearfix"></div>
-                  <div class="row">
-                    <div class="col-md-3 spacetoge">
-                      <label id="nc">Number Chapter * </label>
-                    </div>
-                    <div class="col-md-9 spacetoge">
-                      <input type="number" name="numberchapter" id="numberchapter" placeholder="Number chapter" disabled="true">
-                    </div>
-                  </div>
-                  <div class="clearfix"></div>
-                  <div class="row">
-                    <div class="col-md-3 spacetoge">
-                      <label id="dc">Description Content * </label>
-
-                    </div>
-                    <div class="col-md-9 spacetoge">
-                      <textarea rows="15" name="summary" id="summary" placeholder="Say something for us" disabled="true"></textarea>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-9 col-md-offset-3">
-                      <div class="addfile">
-                        <div class="space-fileup">
-                          <label class="input-label" for="file">
-                            <i class="fa fa-upload"></i>
-                            <span class="label-span">Select file to upload</span></label>
-                            <input type="file" name="filepost" id="file" accept=".pdf">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="clearfix"></div>
-                  </form>
-                </div>
-                <br>
-                <br>
-                <div class="col-md-3">
-                 <div class="panel panel-default">
-                   <div class="panel-body"></div>
-                 </div>
-               </div>
-               <div class="col-lg-3">
-                <img src="../../public/images/day-pass.png" width="100%">
-              </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <embed src="../../public/file/cmpm.pdf" height="800" width="100%"></embed>
             </div>
+           </div>
+
           </div>
-          
+
           <hr>
-          <div class="warningsubmit">
-            <p id="errorsubmit"></p>
-          </div>
-          <div class="submitp">
-            <button class="btn btn-warning custombutton" id="btnsubmitpost">Modify <i class="fa fa-send"></i></button>
-           <button class="btn btn-info custombutton" id="btnsubmitpost">Cancel <i class="fa fa-close"></i></button>
-         </div>  
-       </div>
-          <div class="modal fade modal-md" id="message-box" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header" style="background-color: #20A4FF;">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Message</h4>
-                </div>
-                <div class="modal-body">
-                  <p> <span style="font-family: DauphinPlain; font-size: 16px;">
-                  Hello Cong Trinh Van Where can I get some? </span><br>
-                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                  <br>
-                  <hr>
-                  <span style="float: right;">Thanks you!</span>
-                  <div class="clearfix"></div>
-                </p>
-                </div>
-              </div>
-
-            </div>
+          <div class="exportfile">
+            <button class="btn btn-info" id="exportexcel">Export Excel <i class="fa fa-rocket"></i></button>
           </div>
         </div>
       </div>

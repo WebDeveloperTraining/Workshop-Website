@@ -219,7 +219,6 @@ $(document).ready(function(){
 		else{
 			$("#number-chapter span.invalid").css("display","none");
 			$("#number-chapter span.valid").css("display","inline-block");
-
 		}
 	});
 
@@ -463,3 +462,45 @@ $(document).ready(function(){
     
 });
 
+$(document).ready(function(){
+   	$("#btnsubmitpost").click(function(){
+
+		var number = $("#numberchapter").val().trim();
+		var name = $("#namepost").val().trim();
+		var sum = $("#summary").val().trim();
+
+		if(name==""){
+			$("input[name='namepost']").focus();
+			$("input[name='namepost']").css({"outline-color":"red"});	
+		}else{
+			if(number == ""){
+				$("input[name='numberchapter']").focus();
+			 	$("input[name='numberchapter']").css({"outline-color":"red"});		 
+			 }else{
+			 	if(sum==""){
+			 		$("textarea[name='summary']").focus();
+			 		$("textarea[name='summary']").css({"outline-color":"red"});		
+			 	}
+			}
+		}
+
+   	});
+   	$("input[name='namepost']").focusout(function(){
+   		$("input[name='namepost']").css({"outline-color":"#87C9FF"});	
+   	});
+   	$("input[name='numberchapter']").focusout(function(){
+   		$("input[name='numberchapter']").css({"outline-color":"#87C9FF"});	
+   	});
+   	$("textarea[name='summary']").focusout(function(){
+   		$("textarea[name='summary']").css({"outline-color":"#87C9FF"});	
+   	});
+   	// $("#exportexcel").click(function(e){
+   	// 	window.open('data:application/vnd.ms-excel,'+ $("#exportexcel").html());
+   	// 	e.preventDefault();
+   	// });
+   	$("#exportexcel").click(function () {  
+                $("#exportexcel").table2excel({  
+                    filename: "statistic.xls"  
+                });  
+            }); 
+});

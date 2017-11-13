@@ -1047,7 +1047,7 @@ span.round-tab:hover {
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
 }
 .spacetoge>label{
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: right;
 }
 .spacetoge span.valid{
@@ -1061,6 +1061,14 @@ span.round-tab:hover {
     color: #FF0000;
     font-size: 17px;
     display: none;
+}
+.spacetoge select{
+  width: 100%;
+  height: 30px;
+}
+.custombutton{
+  border-radius: 0px;
+  padding: 7px 30px;
 }
 @media(max-width:768px){
   .spacetoge{
@@ -1082,7 +1090,7 @@ span.round-tab:hover {
 .spacetoge input, .spacetoge textarea{
 /*  border-radius: 5px;*/
 /*  border-style: 1px solid #ddd;*/
-  width: 69%;
+  width: 100%;
 /*  background-color:  #EFF8F7;*/
 }
 
@@ -1101,12 +1109,15 @@ span.round-tab:hover {
   color: #9ECDDF;
 }
 .addfile{
-  height: 187px;
   cursor: pointer;
+  text-align: center; 
 }
 .addfile h5{
   text-align: center;
   padding-top: 100px;
+}
+.submitp{
+  text-align: center;
 }
 .information-post{
   font-family: "Times New Romans";
@@ -1135,6 +1146,11 @@ span.round-tab:hover {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  width: 100%;
+}
+.warningsubmit{
+  text-align: center;
+  color: red;
 }
 .input-label i.fa{
   padding-right: 10px;  
@@ -1787,6 +1803,9 @@ h5.media-heading{
   margin-right: 15%;
   padding-bottom: 20px;
 }
+table{
+  cursor: pointer;
+}
 .custable thead tr th{
   text-align: center;
   color: #73879C;
@@ -1799,7 +1818,7 @@ h5.media-heading{
   text-align: center;
 } 
 .custable thead tr th:last-child{
-  width: 13%;
+  width: 5%;
 }
 .custable thead tr th:nth-child(4){
   width: 20%;
@@ -1983,4 +2002,10 @@ h1.error-number{
 }
 .colorerror{
   color: #fff;
+}
+.exportfile{
+  text-align: center;
+}
+.exportfile button{
+  border-radius: 0px;
 }

@@ -1,0 +1,48 @@
+.page-panel{
+	min-height: 1000px;
+}
+.footer-home{
+	background-color: #303130;
+	color: #c2c1c1;
+	padding-top: 20px;
+}
+.footer-home h2{
+	font-size: 24px;
+}
+.icon-footer{
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background-color: #2B2A2A;
+}
+ul.social-footer li a{
+	color: #fff;
+	padding-left: 20px;
+}
+.menubar{
+	background-color: #fff;
+	color: #000;
+}
+.navbars{
+	margin: 0px;
+}
+.menubar ul.navbars li{
+	cursor: pointer;
+}
+
+.menubar ul.navbars li a{
+	color: #000 !important;
+	padding: 17px 20px 20px 20px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 17px;
+
+}
+.menubar ul.navbars li a:hover{
+	color: red !important;
+}
+.menubar ul.navbars li:nth-child(1) a{
+	padding: 0px 0px 0px 0px;
+}
+.menubar{
+	box-shadow: 2px 2px 2px  #F4F3F2;
+	border-top: 1px inset #F4F3F2;
+}
